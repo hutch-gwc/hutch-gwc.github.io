@@ -14,6 +14,9 @@ redcarpet:
    - superscript
    - strikethrough
 
+categories:
+  - facilitators
+
 exclude:
   # - "*.class"
   # - "*.cpp"
