@@ -26,7 +26,10 @@ theme: minima
 #   - jekyll-feed
 
 collections:
-  - facilitators
+  facilitators:
+      output: true
+  weekly_links:
+    output: true
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

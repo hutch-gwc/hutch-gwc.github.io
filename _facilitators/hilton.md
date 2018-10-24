@@ -1,4 +1,5 @@
 ---
+layout: post
 name: Sarah Hilton
 position: PhD Student
 email: skhilton@uw.edu
