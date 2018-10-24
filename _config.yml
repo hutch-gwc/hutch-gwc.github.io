@@ -1,4 +1,4 @@
-name: Fred Hutch Girls Who Code
+name: Hutch GWC
 description: Hutch GWC 2018-2019
 # url: http://bedford.io
 
@@ -6,7 +6,6 @@ markdown: redcarpet
 permalink: /:categories/:title/
 future: true
 
-<<<<<<< HEAD
 redcarpet:
   extensions:
    - tables
@@ -14,13 +13,6 @@ redcarpet:
    - autolink
    - superscript
    - strikethrough
-=======
-# Build settings
-markdown: kramdown
-theme: jekyll-theme-cayman
-plugins:
-  - jekyll-feed
->>>>>>> f0301553c13720bc40527a2a586a68b53f65ee7a
 
 exclude:
   # - "*.class"
