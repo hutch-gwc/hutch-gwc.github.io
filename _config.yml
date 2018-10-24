@@ -2,7 +2,7 @@ name: Hutch GWC
 description: Hutch GWC 2018-2019
 # url: http://bedford.io
 
-markdown: redcarpet
+markdown: kramdown
 permalink: /:categories/:title/
 future: true
 
