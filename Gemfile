@@ -1,2 +1,17 @@
+
 source 'https://rubygems.org'
-gem 'github-pages', group: :jekyll_plugins
+
+# jekyll
+gem "jekyll", "3.1.1"
+gem "redcarpet"
+
+# compiling less
+gem 'therubyracer'
+gem 'less'
+
+# minifying
+gem 'jekyll-press'
+
+# octokit
+gem 'octokit'
+gem 'netrc'

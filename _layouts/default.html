@@ -3,11 +3,11 @@
 
 <head>
 	<meta charset="utf-8"/>
-	<title>bedford lab</title>
+	<title>{{ page.title }}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- RSS feed -->
-	<!-- <link rel="alternate" type="application/rss+xml" title="Fred Hutch Girls Who Code" href="/feed.xml"> -->
+	<!-- <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml"> -->
 
     <!-- Customized Bootstrap + Font Awesome + Solarized -->
     <link href="/css/style.css" rel="stylesheet" media="screen">
@@ -59,23 +59,32 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					
+					{% if page.categories.first != 'home' %}
+					<object class="logo navbar-brand" data="/images/gwc.png" type="image/svg+xml"></object>
+					<a class="navbar-brand" href="/">Hutch GWC</a>
+					{% endif %}
 				</div>
 				<div class="collapse navbar-collapse" id="navbar-collapse-element">
 					<ul class="nav navbar-nav navbar-right">
-						
+						{% if page.categories.first == 'Contact' %}
+						<li class="active">
+						{% else %}
 						<li>
-						
+						{% endif %}
 						<a href="/Contact/">Contact</a>
 						</li>
-						
+						{% if page.categories.first == 'About' %}
+						<li class="active">
+						{% else %}
 						<li>
-						
+						{% endif %}
 						<a href="/About/">About</a>
 						</li>
-						
+						{% if page.categories.first == 'Links' %}
+						<li class="active">
+						{% else %}
 						<li>
-						
+						{% endif %}
 						<a href="/Links/">Links</a></li>
 					</ul>
 				</div>
@@ -85,107 +94,7 @@
 
 	<div class="container">
 
-	<div class="row">
- <div class="col-md-12">
-   <object class="pull-left biglogo" data="/images/gwc.png" type="image/svg+xml"></object>
-   <div class="bigtitle logobox">
-     Fred Hutch Girls Who Code club 2018-2019
-   </div>
- </div>
-</div>
-
-<div class="bigspacer"></div>
-
-<div class="row">
- <div class="col-md-12">
-   <div class="smallhead">
-     <p>
-       The Fred Hutch Girls Who Code club is a group of high school girls and computational biology PhD
-       students who come together once a week to work on fun and collaborative projects.
-     </p>
-     <p>
-       We are loosely affliated with the national <a href="https://girlswhocode.com/">Girls Who Code</a> organization.
-     </p>
-   </div>
- </div>
-</div>
-
-<div class="bigspacer"></div>
-
-<div class="bigspacer"></div>
-
-<!--
-<div class="row">
- <div class="col-md-12">
-   <div class="head">
-     <a class="off" href="/blog/">Recent posts</a>
-   </div>
-   <div class="spacer"></div>
- </div>
-</div>
-
-<div class="row">
- 
-</div>
-
-<div class="spacer"></div>
-
-<div class="row">
- <div class="col-md-12">
-   <div class="head">
-     <a class="off" href="/papers/">Recent papers</a>
-   </div>
-   <div class="spacer"></div>
- </div>
-</div>
-
-<div class="row">
- 
-</div>
-
-<div class="spacer"></div>
-
-<div class="row">
- <div class="col-md-12">
-   <div class="head">
-     <a class="off" href="/projects/">Active projects</a>
-   </div>
-   <div class="spacer"></div>
- </div>
-</div>
-
-<div class="row">
- 
-</div>
-
-<div class="spacer"></div>
-
-<div class="row">
- <div class="col-md-12">
-   <div class="head">
-     Misc
-   </div>
-   <div class="spacer"></div>
- </div>
-</div>
-
-<div class="row">
- <div class="col-md-12 reduced-gutter">
-   <div class="pad-left">
-     <ul class="list-inline">
-       
-       <li class="footernav">
-         <i class="fa fa-angle-right"></i> <a class="off" href="/talks/">Talks</a>
-       </li>
-       <li class="footernav">
-         <i class="fa fa-angle-right"></i> <a class="off" href="http://www.fredhutch.org/">Fred Hutch</a>
-       </li>
-     </ul>
-   </div>
-   <div class="spacer"></div>
- </div>
-</div> -->
-
+	{{ content }}
 
 	</div>
 
