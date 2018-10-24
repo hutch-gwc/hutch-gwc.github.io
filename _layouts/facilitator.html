@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+{% assign member = page %}
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="media">
+			{% if member.image %}
+			<img class="pull-left pad-right media-object" width=120 src="{{ member.image }}">
+			{% endif %}
+			<div class="media-body titlebox">
+				<div class="bigtitle media-heading">
+					{{ member.title }}
+				</div>
+				<p>
+				<div class="smallhead">
+					{{ member.position }}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+		{% if member.calendar %}
+		<div class="smallhead">
+			Calendar
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-calendar fa-fw"></i>
+			<a class="off" href="{{ member.calendar }}">{{ member.title }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+		{% if member.email %}
+		{% assign emailarray = member.email | split: '@' %}
+		<div class="smallhead">
+			Email
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-inbox fa-fw"></i>
+			{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+	</div>
+	<div class="col-md-8">
+		<div class="post">
+			{{ content }}
+		</div>
+
+		{% assign lastname = member.title | split: ' ' | last %}
+		{% assign firstinitial = member.title | split: ' ' | first | slice: 0 %}
+		{% assign searchstring = lastname | append: ' ' | append: firstinitial %}
+
+	</div>
+	<div class="col-md-1"></div>
+</div>
