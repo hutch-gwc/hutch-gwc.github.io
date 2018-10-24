@@ -14,8 +14,8 @@ redcarpet:
    - superscript
    - strikethrough
 
-categories:
-  - facilitators
+collections:
+  - staff_members
 
 exclude:
   # - "*.class"
