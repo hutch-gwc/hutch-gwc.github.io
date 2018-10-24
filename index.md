@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Hutch GWC 
+title: Hutch GWC
 categories:
 - home
 ---
@@ -24,7 +24,7 @@ categories:
        students who come together once a week to work on fun and collaborative projects.
      </p>
      <p>
-       We are loosely affliated with the national <a href="https://girlswhocode.com/">Girls Who Code</a> organization.
+       We are loosely affiliated with the national <a href="https://girlswhocode.com/">Girls Who Code</a> organization.
      </p>
    </div>
  </div>
