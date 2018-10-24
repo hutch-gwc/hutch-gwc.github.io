@@ -4,3 +4,7 @@
 
 layout: home
 ---
+
+Welcome to Fred Hutch Girls Who Code club!
+
+![useful image]({{ site.url }}/assets/image.png)
