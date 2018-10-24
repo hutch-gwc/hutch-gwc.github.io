@@ -1,6 +1,6 @@
 ---
 layout: default
-title: bedford lab
+title: Hutch GWC 
 categories:
 - home
 ---
