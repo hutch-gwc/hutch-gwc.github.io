@@ -3,19 +3,16 @@ layout: page
 title: Facilitators
 permalink: /facilitators/
 ---
-<div class="row">
-	<div class="col-md-12">
-		<div class="title">
-			Current members
-		</div>
-	</div>
-</div>
 
 {% for facilitator in site.facilitators %}
-  <h2>{{ facilitator.name }} - {{ facilitator.position }}</h2>
-  <p>{{ facilitator.content | markdownify }}</p>
-  <img src="{{site.baseurl}}/assets/images/facilitators/{{facilitator.image}}">
+<img src="{{site.baseurl}}/assets/images/facilitators/{{facilitator.image}}">
+<h2>
+	<a href="{{ facilitator.url }}">
+		{{ facilitator.name }}
+	</a>
+</h2>
 {% endfor %}
+
 
 <!-- <div class="bigspacer"></div> -->
 
