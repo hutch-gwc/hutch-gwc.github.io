@@ -1,0 +1,34 @@
+---
+layout: default
+title: Core-4
+categories:
+ - core-4
+---
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="title">
+			Core-4
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+{% for core in site.categories.core-4 %}
+    {% cycle 'add rows': '<div class="row">', nil, nil %}
+		<div class="col-md-4 paperbox">
+			<div class="media">
+  				<a class="pull-left" href="{{ core.url }}">
+    				<img width=100 class="media-object" src="{{ core.image }}">
+  				</a>
+ 			 	<div class="media-body">
+    				<div class="smallhead media-heading"><a href="{{ core.url }}" class="off">{{ core.title }}</a></div>
+  				</div>
+			</div>
+			<div class="bigspacer"></div>
+			<div class="spacer"></div>
+        </div>
+    {% cycle 'close rows': nil, nil, '</div>' %}
+{% endfor %}
+{% cycle 'close rows': nil, '</div>', '</div>' %}
