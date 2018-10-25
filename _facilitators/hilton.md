@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: facilitator
 name: Sarah Hilton
 position: PhD Student
 email: skhilton@uw.edu

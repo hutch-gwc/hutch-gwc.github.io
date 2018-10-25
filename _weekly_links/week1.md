@@ -1,13 +1,11 @@
 ---
-layout: post
+layout: weekly_links
 name: Week 1 - 10/9
-title: Links for Week 1 (10/9)
+date: 10/9
 ---
 
-# [Meet the Facilitators]({{site.baseurl}}/facilitators/)
-Sarah Hilton - skhilton@uw.edu  
-Emma Hoppe - erhoppe@uw.edu
+## Meet the Facilitators
 
-# Core-4
+* [Sarah Hilton (skhilton@gwu.edu)](../facilitators/hilton)  
 
-# Other links
+## Girls Who Code HQ

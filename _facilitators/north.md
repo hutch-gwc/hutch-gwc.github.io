@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: facilitator
 name: Khrystyna North
 position: PhD Student
 email: dialik@uw.edu
